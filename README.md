@@ -163,42 +163,6 @@ Navigate into the counter directory using the following command:
 
 1. Use the following command to start the application:
 
-` docker-compose up --scale web=3 --build`
+` docker-compose up -d`
 
-2. When you run this command you should see output similar to the following:
-
-![Docker Compose Screenshot](images/docker-compose-pic.png)
-
----
-
-## Testing the app
-
-This flask app that has two routes:
-
-`/`: Displays the following welcome message: `Welcome to the VisitCounter`
-`/count`: Increments and displays a visit count stored in Redis.
-
-After the application starts, navigate to `http://localhost:5002` and
-`http://localhost:5002/count` in your web browser.
-
----
-
-![Counter App Screenshot 1](images/counter-app-1.png)
-
----
-
-![Counter App Screenshot 2](images/counter-app-2.png)
-
----
-
-## Tear down the containers
-
-Use the following command to tear down the containers:
-
-`docker-compose down`
-
----
-
-## Documentation resources
-
-- [Docker Documentation](https://docs.docker.com/) - Official Docker documentation
+2. Copy the public IP address of your EC2 instance along with the mapped host port, then paste it into your favorite browser. You should now be able to access the application.
