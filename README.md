@@ -17,46 +17,6 @@ For scalability, the Flask service is run in multiple instances, with NGINX acti
 - NGINX
 - Docker & Docker Compose
 
----
-
-## 📁 Docker Counter Project Structure
-
-```
-
-
-docker-counter-project/
-├── counter/
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── index.css
-│   │   └── images/
-│   │       └── index-bg.jpg
-│   ├── templates/
-│   │   ├── count.html
-│   │   └── index.html
-│   ├── count.py
-│   ├── docker-compose.yml
-│   ├── Dockerfile
-│   └── nginx.conf
-├── images/
-│   ├── counter-app-1.png
-│   ├── counter-app-2.png
-│   └── docker-compose-pic.png
-└── README.md
-
-
-```
-
----
-
-![Counter App Screenshot 1](images/counter-app-1.png)
-
----
-
-![Counter App Screenshot 2](images/counter-app-2.png)
-
----
-
 ## Dockerfile, images and containers
 
 ### Dockerfile
